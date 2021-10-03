@@ -1,0 +1,45 @@
+#Program to find the Maximum and Minimum of the array.
+
+PROGRAM:-
+
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main()
+{
+    
+    #Accepting user input-------------
+    int n;
+    cin>>n;
+    int input[100];
+    int array[n];
+    int i;
+    
+    #Accepting array elements--------------
+    for (i=0;i<n;i++)
+    {
+        cin>>array[i];
+    }
+    
+    #Defining min and max variables-------------
+    int min = array[0];
+    int max = array[0];
+    
+    #Using FOR loop to compare all the array elements-------------
+    for(i=0;i<n;i++){
+        if(array[i]>max){
+            max=array[i];
+        }
+        if(array[i]<min){
+            min=array[i];
+        }
+    }
+    
+    #Printing the Minimum and Maximum of the array elements----------
+    cout<<"Min"<<min<<"Max"<<max<<endl;
+
+    return 0;
+}
+
